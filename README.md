@@ -46,7 +46,7 @@ roscore
 ```
 - Run Turtlebot Simulation
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/[user]/catkin_ws/src/subs_camera/src turtlebot_custom_gazebo_worlds/line_map.world
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/[user]/catkin_ws/src/subs_camera/src/turtlebot_custom_gazebo_worlds/line_map.world
 ``` 
 - Run OpenCV node
 ```
