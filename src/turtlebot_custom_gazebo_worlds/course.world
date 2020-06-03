@@ -34,8 +34,8 @@
           </geometry>
           <material>
             <script>
-              <uri>file:///home/rezkaprayudha/catkin_ws/src/subs_camera/src/turtlebot_custom_gazebo_worlds/course.material</uri>
-              <name>course</name>
+              <uri>file:///home/rezkaprayudha/catkin_ws/src/subs_camera/src/turtlebot_custom_gazebo_worlds/line_map.material</uri>
+              <name>line_map</name>
             </script>
           </material>
         </visual>
