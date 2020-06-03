@@ -6,7 +6,7 @@ This project is an Assignment for Autonomous System (ENGR7712) topic at Flinders
 
 
 ## Screenshot
-![Gazebo Run](result/gazebo.png)
+![Gazebo Run](src/result/gazebo.png)
 
 
 ## Getting Started
