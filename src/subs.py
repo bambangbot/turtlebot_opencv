@@ -8,7 +8,6 @@ Tech used :
 
 Aim : Navigate Turtlebot to follow Line based on computer vision processing using OpenCV
 
-Credits : 
 """
 
 
@@ -55,8 +54,7 @@ class line_follower_turtlebot():
         # Process the image to detect and track objects or features
         processed_image = self.process_image(frame)
         
-        #self.drive_bot()
-        #         
+        #self.drive_bot()       
         # Display the image.
         cv2.imshow(self.node_name, processed_image)
         
@@ -111,18 +109,9 @@ class line_follower_turtlebot():
         else:
             print("error")
         self.pub.publish(move_pos)
-        print cX
-
-
+        print ("Centroid X point=",cX)
         return red_mask
-    
-    """
-    Indepedendent Function to drive the turtlebot
-    def drive_bot(self):
-        move_pos=Twist()
-        move_pos.linear.x=0.1
-        self.pub.publish(move_pos)
-    """
+
     def cleanup(self):
         print "Done. Bela Ciao"
         cv2.destroyAllWindows()   
