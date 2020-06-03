@@ -10,7 +10,7 @@ This project is an Assignment for Autonomous System (ENGR7712) topic at Flinders
 
 
 ## Getting Started
-The project is developed using ROS and OpenCV under Ubuntu environment. The ![subs.py](subs.py) will run control node to navigate Turtlebot through line.
+The project is developed using ROS and OpenCV under Ubuntu environment. The subs.py will run control node to navigate Turtlebot through line.
 
 ### Prequisites
 - Python 
