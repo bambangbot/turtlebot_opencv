@@ -15,7 +15,7 @@ import rospy
 import sys
 import cv2
 import cv2.cv as cv
-from sensor_msgs.msg import Image, CameraInfo
+from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
 from geometry_msgs.msg import Twist
