@@ -57,7 +57,7 @@ rosrun [package-name] subs.py
 This project use two ROS topics. First subscribe from "/camera/rgb/image_raw" to capture image and process it using OpenCV lib and publish velocity of Turtlebot to '/cmd_vel_mux/input/teleop' based on camera reading.
 
 There are three main function in the program.
-- Callback funtion to retain image from Turtlebot Camera. 
+- Callback function to retain image from Turtlebot Camera. 
 - Convert Image function to translate image from ROS format to OpenCV
 - Process Image function to process the captured frame. 
 
