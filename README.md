@@ -6,11 +6,11 @@ This project is an Assignment for Autonomous System (ENGR7712) topic at Flinders
 
 
 ## Screenshot
-![Gazebo Run](result/gazebo.png)
+![Gazebo Run](src/result/gazebo.png)
 
 
 ## Getting Started
-The project is developed using ROS and OpenCV under Ubuntu environment. The ![subs.py](subs.py) will run control node to navigate Turtlebot through line.
+The project is developed using ROS and OpenCV under Ubuntu environment. The subs.py will run control node to navigate Turtlebot through line.
 
 ### Prequisites
 - Python 
@@ -46,7 +46,7 @@ roscore
 ```
 - Run Turtlebot Simulation
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/[user]/catkin_ws/src/subs_camera/src turtlebot_custom_gazebo_worlds/line_map.world
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/[user]/catkin_ws/src/subs_camera/src/turtlebot_custom_gazebo_worlds/line_map.world
 ``` 
 - Run OpenCV node
 ```
