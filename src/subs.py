@@ -114,7 +114,7 @@ class line_follower_turtlebot():
         self.pub.publish(move_pos)
         # print ("Centroid X point=",cX)
         # print ("Centroid Y point=",cY)
-        print(t,"seconds")
+        print(t,"seconds") #counting process time 
         return frame
 
     def cleanup(self):
