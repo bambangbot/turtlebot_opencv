@@ -76,6 +76,7 @@ class line_follower_turtlebot():
             print e
     
     def process_image(self, frame):
+        e1 = cv2.getTickCount()
         hsv_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
         #Red Color Representation
         low_red = np.array([0, 50, 50])
@@ -89,10 +90,12 @@ class line_follower_turtlebot():
         
         cX = int(M["m10"] / M["m00"])
         cY = int(M["m01"] / M["m00"])
+        
 
         cv2.circle(frame, (cX, cY), 5, (255, 255, 255), -1)
         cv2.putText(frame, "centroid", (cX - 25, cY - 25),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
-
+        e2 = cv2.getTickCount()
+        t=(e2 - e1)/cv2.getTickFrequency()
         move_pos=Twist()
 
         #Navigate Turtlebot moves based on CentroidX Value
@@ -109,8 +112,10 @@ class line_follower_turtlebot():
         else:
             print("error")
         self.pub.publish(move_pos)
-        print ("Centroid X point=",cX)
-        return red_mask
+        # print ("Centroid X point=",cX)
+        # print ("Centroid Y point=",cY)
+        print(t,"seconds")
+        return frame
 
     def cleanup(self):
         print "Done. Bela Ciao"
